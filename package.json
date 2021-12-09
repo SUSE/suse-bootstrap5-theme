@@ -12,6 +12,10 @@
   },
   "keywords": [],
   "author": "Andreas Hasenkopf",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:crazyscientist/suse-bootstrap5-theme.git"
+  },
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^5.1.3"
