@@ -7,7 +7,7 @@
     "test": "echo 'No tests defined'; exit 0",
     "build": "npm run clear && npm run css",
     "css": "npm run css-compile",
-    "css-compile": "sass -I node_modules --style=compressed src/scss/suse.scss:dist/css/suse.css",
+    "css-compile": "sass -I node_modules --style=compressed scss/suse.scss:dist/css/suse.css",
     "clear": "rm -rf dist/*"
   },
   "keywords": [],
