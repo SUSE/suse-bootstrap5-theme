@@ -1,0 +1,33 @@
+@use "sass:map";
+@import "bootstrap/scss/functions";
+
+// This is our SUSE theme
+@import "colors";
+@import "fonts";
+
+$enable-shadows: true;
+$enable-responsive-font-sizes: true;
+
+@import "bootstrap/scss/variables";
+
+$theme-colors: map.merge($theme-colors, $suse-theme-colors);
+// End of SUSE theme
+
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/popover";
+@import "bootstrap/scss/spinners";

@@ -1,0 +1,43 @@
+@import "bootstrap/scss/functions";
+
+// Base colors
+$blue: #2453FF;
+$cerulean: #00B2E2;
+// Primary colors
+$pine-green: #0C322C;
+$jungle-green: #30BA78;
+
+// Secondary colors
+$midnight-blue: #192072;
+$waterhole-blue: #2453FF;
+
+// Tertiary Colors
+$mint: #90EBCD;
+$persimmon: #FE7C3F;
+$fog: #EFEFEF;
+
+// Shades
+$cerulean-100: tint-color($cerulean, 80%);
+$cerulean-200: tint-color($cerulean, 60%);
+$cerulean-300: tint-color($cerulean, 40%);
+$cerulean-400: tint-color($cerulean, 20%);
+$cerulean-500: $cerulean;
+$cerulean-600: shade-color($cerulean, 20%);
+$cerulean-700: shade-color($cerulean, 40%);
+$cerulean-800: shade-color($cerulean, 60%);
+$cerulean-900: shade-color($cerulean, 80%);
+
+// By usage
+$primary: $pine-green;
+$secondary: $midnight-blue;
+$tertiary: $fog;
+$success: $mint;
+$info: $cerulean-100;
+
+$suse-theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "tertiary":   $tertiary,
+  "success":    $success,
+  "info":       $info
+);
