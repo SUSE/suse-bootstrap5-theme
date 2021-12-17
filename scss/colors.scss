@@ -5,6 +5,7 @@ $blue: #2453FF;
 $cerulean: #00B2E2;
 $yellow: #FFC107;
 $red: #DC3545;
+$gray-500: #adb5bd;
 $gray-900: #686565;
 
 // Primary colors
@@ -31,6 +32,16 @@ $cerulean-700: shade-color($cerulean, 40%);
 $cerulean-800: shade-color($cerulean, 60%);
 $cerulean-900: shade-color($cerulean, 80%);
 
+$pine-green-100: tint-color($pine-green, 80%);
+$pine-green-200: tint-color($pine-green, 60%);
+$pine-green-300: tint-color($pine-green, 40%);
+$pine-green-400: tint-color($pine-green, 20%);
+$pine-green-500: $pine-green;
+$pine-green-600: shade-color($pine-green, 20%);
+$pine-green-700: shade-color($pine-green, 40%);
+$pine-green-800: shade-color($pine-green, 60%);
+$pine-green-900: shade-color($pine-green, 80%);
+
 // By usage
 $primary: $jungle-green;
 $secondary: $midnight-blue;
@@ -41,6 +52,9 @@ $warning: $yellow;
 $danger: $red;
 $light: $fog;
 $dark: $gray-900;
+$calltoaction: $persimmon;
+$link-color: $blue;
+$badge-color: $gray-500;
 
 $suse-theme-colors: (
   "primary":    $primary,
@@ -51,9 +65,14 @@ $suse-theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "cta":        $calltoaction
 );
 
 .bg-navbar {
   background-color: $pine-green;
+}
+
+.bg-pine {
+  background-color: $pine-green-400;
 }
