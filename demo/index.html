@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Example</title>
     <link rel="stylesheet" href="../dist/css/suse.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Use Google fonts for demo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar bg-navbar navbar-dark navbar-expand-lg">
+<nav id="navbar" class="navbar bg-navbar navbar-dark navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">SUSE Product Brand</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -66,36 +69,55 @@
     </div>
 </nav>
 <div class="container pt-2">
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-        </li>
-    </ul>
-    <div class="alert alert-primary">Hello World</div>
-    <div class="alert alert-secondary">Hello World</div>
-    <div class="alert alert-tertiary">Hello World</div>
-    <div class="alert alert-success">Hello World</div>
-    <div class="alert alert-info">Hello World</div>
-    <div class="alert alert-warning">Hello World</div>
-    <div class="alert alert-danger">Hello World</div>
-    <div class="alert alert-cta">Hello World</div>
+    <div id="navtabs" class="container pt-2">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li>
+        </ul>
+    </div>
+    <div id="alerts">
+        <div class="alert alert-primary">Hello World</div>
+        <div class="alert alert-secondary">Hello World</div>
+        <div class="alert alert-tertiary">Hello World</div>
+        <div class="alert alert-success">Hello World</div>
+        <div class="alert alert-info">Hello World</div>
+        <div class="alert alert-warning">Hello World</div>
+        <div class="alert alert-danger">Hello World</div>
+        <div class="alert alert-cta">Hello World</div>
+        <div class="alert alert-herocta">Hello World</div>
+    </div>
+    <div id="badges">
+        <span class="badge bg-primary">Tada</span>
+        <span class="badge bg-secondary">Tada</span>
+        <span class="badge bg-tertiary">Tada</span>
+        <span class="badge bg-success">Tada</span>
+        <span class="badge bg-info">Tada</span>
+        <span class="badge bg-warning">Tada</span>
+        <span class="badge bg-danger">Tada</span>
 
-    <span class="badge bg-primary">Tada</span>
-    <span class="badge bg-secondary">Tada</span>
-    <span class="badge bg-tertiary">Tada</span>
-    <span class="badge bg-success">Tada</span>
-    <span class="badge bg-info">Tada</span>
-    <span class="badge bg-warning">Tada</span>
-    <span class="badge bg-danger">Tada</span>
+    </div>
+    <div id="dropdown" class="input-group">
+        <input type="text" placeholder="input" class="form-control"/>
+        <button class="btn btn-outline-dark dropdown-toggle" type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div>
     <p>
         Go to <a href="https://github.com/crazyscientist/suse-bootstrap5-theme/">GitHub</a>.
     </p>
