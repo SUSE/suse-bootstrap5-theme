@@ -14,6 +14,7 @@ $theme-colors: map.merge($theme-colors, $suse-theme-colors);
 // End of SUSE theme
 
 @import "bootstrap/scss/mixins";
+@import "bootstrap/scss/maps";
 @import "bootstrap/scss/utilities";
 
 @import "bootstrap/scss/root";
