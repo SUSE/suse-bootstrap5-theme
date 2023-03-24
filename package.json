@@ -18,11 +18,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^5.2.0",
-    "@fontsource/poppins": "^4.5.8",
-    "@fontsource/roboto-mono": "^4.5.7"
+    "@fontsource/poppins": "^4.5.10",
+    "@fontsource/roboto-mono": "^4.5.10",
+    "bootstrap": "^5.2.3"
   },
   "devDependencies": {
-    "sass": "^1.53.0"
+    "sass": "^1.60.0"
   }
 }
