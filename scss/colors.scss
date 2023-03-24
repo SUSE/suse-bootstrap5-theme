@@ -40,7 +40,21 @@ $pine-green-700: shade-color($pine-green, 40%);
 $pine-green-800: shade-color($pine-green, 60%);
 $pine-green-900: shade-color($pine-green, 80%);
 
+$mint-100: tint-color($mint, 80%);
+$mint-200: tint-color($mint, 60%);
+$mint-300: tint-color($mint, 40%);
+$mint-400: tint-color($mint, 20%);
+$mint-500: $mint;
+$mint-600: shade-color($mint, 20%);
+$mint-700: shade-color($mint, 40%);
+$mint-800: shade-color($mint, 60%);
+$mint-900: shade-color($mint, 80%);
+
 // By usage
+$component-active-bg: $mint;
+$component-active-color: color-contrast($component-active-bg);
+$component-active-border-color: $mint-600;
+
 $primary: $jungle-green;
 $secondary: $midnight-blue;
 $tertiary: $fog;
@@ -53,6 +67,16 @@ $dark: $gray-900;
 $calltoaction: $pine-green;
 $link-color: $blue;
 $badge-color: $gray-500;
+
+$list-group-active-bg: $component-active-bg;
+$list-group-active-border-color: $component-active-border-color;
+$list-group-active-color: $component-active-color;
+$list-group-hover-bg: $mint-100;
+
+$pagination-active-color: $component-active-color;
+$pagination-active-bg: $component-active-bg;
+$pagination-active-border-color: $component-active-border-color;
+
 
 $suse-theme-colors: (
   "primary":    $primary,
